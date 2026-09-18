@@ -1,28 +1,52 @@
-3. Creating a Git Repository
+4. Git Working Areas
 
-A Git repository is a folder where Git tracks changes made to a project. Creating a repository allows developers to save different versions of their work and manage changes over time.
+Git uses different working areas to manage changes before they become part of the project's history.
 
-Creating a Git Repository Locally
+The three main working areas are:
 
-To create a Git repository, first open the terminal and navigate to your project folder:
+Working Directory
+Staging Area
+Repository
+1. Working Directory
 
-cd project-folder
+The working directory is where you create, edit, and delete files.
 
-Then initialize Git:
+For example, if you create a file called:
 
-git init
+index.html
 
-The git init command creates a hidden .git directory inside the project folder. This directory contains the information Git needs to track the project's history.
+and write some code in it, the changes are initially in the working directory.
 
-To check whether Git is working correctly, use:
+Git can detect these changes using:
 
 git status
+2. Staging Area
 
-Git will show the current state of the files in the repository.
+The staging area contains changes that you have selected to include in the next commit.
 
-Example
-mkdir my-project
-cd my-project
-git init
+To move a file to the staging area:
 
-After running git init, the folder becomes a Git repository.
+git add index.html
+
+To stage all changed files:
+
+git add .
+3. Repository
+
+The repository stores the committed history of the project.
+
+After staging your changes, you create a commit:
+
+git commit -m "Add index page"
+
+The basic movement of changes is:
+
+Working Directory
+       ↓
+   git add
+       ↓
+Staging Area
+       ↓
+  git commit
+       ↓
+   Repository
