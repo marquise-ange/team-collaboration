@@ -1,47 +1,53 @@
-6. Commits
+ 7. Branches
 
-A commit is a saved snapshot of changes in a Git repository.
+A branch is an independent line of development in a Git repository.
 
-Commits allow developers to keep a history of what was changed and when it was changed.
+Branches allow different developers to work on different parts of a project without immediately changing the main branch.
 
-Creating a Commit
+The default branch is commonly called:
 
-First, check your changes:
+main
 
-git status
+For collaborative work, team members can create their own branches.
 
-Stage the changes:
+For example:
 
-git add .
+main
+├── 1
+└── 2
 
-Then create a commit:
 
-git commit -m "Add Git workflow documentation"
+In this example:
 
-The -m option allows you to provide a message describing the changes.
+* 1 represents the first developer's branch.
+* 2 represents the second developer's branch.
+* main is the shared main branch.
 
-Good Commit Messages
+ Creating a Branch
 
-A good commit message should be short and describe what was changed.
+To create a new branch, use:
+git branch branch-name
 
-Examples:
+For example:
+git branch 1
 
-git commit -m "Add Git repository documentation"
-git commit -m "Explain Git working areas"
-git commit -m "Add branch documentation"
-Viewing Commit History
 
-To see previous commits:
+To create a branch and switch to it at the same time, use:
+git switch -c 1
 
-git log
 
-A shorter version is:
+Viewing Branches
 
-git log --oneline
+To see the branches in your local repository, use:
+git branch
+
+
+The * indicates the branch you are currently using.
 
 Example:
+* 1
+  main
+  2
 
-d6d2bfb Git Installation and Configuration
-97089cf First commit
 
-Each commit has a unique identifier called a commit hash.
+In this example, the * shows that the user is currently working on branch 1.
