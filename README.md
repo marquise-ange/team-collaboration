@@ -1,48 +1,47 @@
-5. Basic Git Workflow
+6. Commits
 
-The basic Git workflow is the process developers use to save and manage changes in a project.
+A commit is a saved snapshot of changes in a Git repository.
 
-The common workflow is:
+Commits allow developers to keep a history of what was changed and when it was changed.
 
-Edit files
-    ↓
+Creating a Commit
+
+First, check your changes:
+
 git status
-    ↓
-git add
-    ↓
-git commit
-    ↓
-git push
 
+Stage the changes:
 
-Step 1: Edit Files
+git add .
 
-Create or modify files in your project.
+Then create a commit:
 
-Step 2: Check the Status
+git commit -m "Add Git workflow documentation"
 
-Use: git status
+The -m option allows you to provide a message describing the changes.
 
-This shows which files have been modified, added, or deleted.
+Good Commit Messages
 
-Step 3: Stage Changes
+A good commit message should be short and describe what was changed.
 
-Use: git add .
+Examples:
 
- This stages all changes for the next commit.
+git commit -m "Add Git repository documentation"
+git commit -m "Explain Git working areas"
+git commit -m "Add branch documentation"
+Viewing Commit History
 
-Step 4: Commit Changes
+To see previous commits:
 
-Use: git commit -m "Describe the changes"
+git log
 
-A commit saves a snapshot of the staged changes in Git's history.
+A shorter version is:
 
-Step 5: Push Changes
+git log --oneline
 
-If the repository is connected to GitHub, use:
+Example:
 
-git push origin branch-name
+d6d2bfb Git Installation and Configuration
+97089cf First commit
 
-For example: git push origin flora
-
-This sends your local commits to the flora branch on GitHub.
+Each commit has a unique identifier called a commit hash.
