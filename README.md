@@ -1,10 +1,30 @@
 
-Git vs GitHub
-Introduction
+12. Git Pull
+What is Git Pull?
 
-Git and GitHub are commonly used together in software development, but they are not the same thing.
+git pull is used to download changes from a remote GitHub repository and automatically integrate them into your current local branch.
 
-Git is a version control system that runs on your computer. It helps developers track changes in their projects, manage different versions of files, create branches, and work on multiple features without losing previous work.
+It is commonly used before starting work so that your local project has the latest changes from your team.
 
-GitHub is a cloud-based platform that hosts Git repositories online. It makes it easier for developers and teams to store, share, review, and collaborate on projects from different locations.
+Syntax
+git pull origin branch-name
+Example
+git pull origin main
+
+This downloads the latest changes from the main branch on GitHub and merges them into your current branch.
+
+Use Case
+
+Use git pull when:
+
+Your teammate has pushed new changes to GitHub.
+You want to update your local project.
+You want to get the latest version before making new changes.
+Important
+git pull
+
+is essentially a combination of:
+
+git fetch
+git merge
 
