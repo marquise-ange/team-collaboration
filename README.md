@@ -1,3 +1,4 @@
+
 12. Git Pull
 What is Git Pull?
 
@@ -26,5 +27,4 @@ is essentially a combination of:
 
 git fetch
 git merge
-Commit Message
-Add documentation for Git pull
+
