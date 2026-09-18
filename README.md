@@ -1,20 +1,56 @@
  7. Branches
 
-A branch is an independent line of development in a Git repository.
 
-Branches allow different developers to work on different parts of a project without immediately changing the main branch.
-
-The default branch is commonly called:
-
-main
-
-For collaborative work, team members can create their own branches.
-
-For example:
-
-main
-├── 1
-└── 2
+ 
+​
+19
+ 
+Syntax
+20
+ 
+git pull origin branch-name
+21
+ 
+Example
+22
+ 
+git pull origin main
+23
+ 
+​
+24
+ 
+This downloads the latest changes from the main branch on GitHub and merges them into your current branch.
+25
+ 
+​
+26
+ 
+Use Case
+27
+ 
+​
+28
+ 
+Use git pull when:
+29
+ 
+​
+30
+ 
+Your teammate has pushed new changes to GitHub.
+31
+ 
+You want to update your local project.
+32
+ 
+You want to get the latest version before making new changes.
+33
+ 
+Important
+34
+ 
+git pull
 
 
 In this example:
