@@ -1,8 +1,28 @@
-Git vs GitHub
-Introduction
+3. Creating a Git Repository
 
-Git and GitHub are commonly used together in software development, but they are not the same thing.
+A Git repository is a folder where Git tracks changes made to a project. Creating a repository allows developers to save different versions of their work and manage changes over time.
 
-Git is a version control system that runs on your computer. It helps developers track changes in their projects, manage different versions of files, create branches, and work on multiple features without losing previous work.
+Creating a Git Repository Locally
 
-GitHub is a cloud-based platform that hosts Git repositories online. It makes it easier for developers and teams to store, share, review, and collaborate on projects from different locations.
+To create a Git repository, first open the terminal and navigate to your project folder:
+
+cd project-folder
+
+Then initialize Git:
+
+git init
+
+The git init command creates a hidden .git directory inside the project folder. This directory contains the information Git needs to track the project's history.
+
+To check whether Git is working correctly, use:
+
+git status
+
+Git will show the current state of the files in the repository.
+
+Example
+mkdir my-project
+cd my-project
+git init
+
+After running git init, the folder becomes a Git repository.
