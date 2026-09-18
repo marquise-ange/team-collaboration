@@ -1,52 +1,48 @@
-4. Git Working Areas
+5. Basic Git Workflow
 
-Git uses different working areas to manage changes before they become part of the project's history.
+The basic Git workflow is the process developers use to save and manage changes in a project.
 
-The three main working areas are:
+The common workflow is:
 
-Working Directory
-Staging Area
-Repository
-1. Working Directory
-
-The working directory is where you create, edit, and delete files.
-
-For example, if you create a file called:
-
-index.html
-
-and write some code in it, the changes are initially in the working directory.
-
-Git can detect these changes using:
-
+Edit files
+    ↓
 git status
-2. Staging Area
+    ↓
+git add
+    ↓
+git commit
+    ↓
+git push
 
-The staging area contains changes that you have selected to include in the next commit.
 
-To move a file to the staging area:
+Step 1: Edit Files
 
-git add index.html
+Create or modify files in your project.
 
-To stage all changed files:
+Step 2: Check the Status
 
-git add .
-3. Repository
+Use: git status
 
-The repository stores the committed history of the project.
+This shows which files have been modified, added, or deleted.
 
-After staging your changes, you create a commit:
+Step 3: Stage Changes
 
-git commit -m "Add index page"
+Use: git add .
 
-The basic movement of changes is:
+ This stages all changes for the next commit.
 
-Working Directory
-       ↓
-   git add
-       ↓
-Staging Area
-       ↓
-  git commit
-       ↓
-   Repository
+Step 4: Commit Changes
+
+Use: git commit -m "Describe the changes"
+
+A commit saves a snapshot of the staged changes in Git's history.
+
+Step 5: Push Changes
+
+If the repository is connected to GitHub, use:
+
+git push origin branch-name
+
+For example: git push origin flora
+
+This sends your local commits to the flora branch on GitHub.
