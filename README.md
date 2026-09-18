@@ -1,8 +1,22 @@
-Git vs GitHub
-Introduction
+Branching & Merging
 
-Git and GitHub are commonly used together in software development, but they are not the same thing.
+Branches let teammates work on different features without interfering with each other.
 
-Git is a version control system that runs on your computer. It helps developers track changes in their projects, manage different versions of files, create branches, and work on multiple features without losing previous work.
+Create and switch to a new branch
+bash
+git branch feature-navbar        # create branch
+git checkout feature-navbar      # switch to it
+# or in one step:
+git checkout -b feature-navbar
+List branches
+bash
+git branch
+Merge a branch into main
+bash
+git checkout main
+git merge feature-navbar
+Delete a branch (after merging)
+bash
+git branch -d feature-navbar
 
-GitHub is a cloud-based platform that hosts Git repositories online. It makes it easier for developers and teams to store, share, review, and collaborate on projects from different locations.
+Use case: Teammate A works on feature-login, Teammate B works on feature-navbar. Each pushes their own branch, then merges into main via a Pull Request once reviewed.
